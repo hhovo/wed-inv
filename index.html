@@ -175,6 +175,40 @@
             margin-bottom: 40px;
         }
 
+        .calendar-icon {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: var(--coral);
+            border-radius: 8px;
+            position: relative;
+            margin-right: 15px;
+            vertical-align: middle;
+        }
+
+        .calendar-icon::before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: 8px;
+            right: 8px;
+            height: 8px;
+            background: white;
+            border-radius: 2px;
+        }
+
+        .calendar-icon::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -30%);
+            width: 20px;
+            height: 2px;
+            background: white;
+            box-shadow: 0 6px 0 white, 0 12px 0 white;
+        }
+
         .countdown {
             display: flex;
             justify-content: center;
@@ -475,7 +509,7 @@
 
     <!-- Events Section -->
     <section class="events-section">
-        <h2 class="section-title" style="text-align: center; margin-bottom: 60px;">📅 The Big Day</h2>
+        <h2 class="section-title" style="text-align: center; margin-bottom: 60px;"><span class="calendar-icon"></span>The Big Day</h2>
         <div class="events-container">
             <div class="event-card ceremony">
                 <span class="event-emoji">⛪</span>
@@ -574,4 +608,3 @@
 
 </body>
 </html>
-
