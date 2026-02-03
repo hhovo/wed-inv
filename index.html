@@ -71,7 +71,10 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(135deg, var(--coral) 0%, var(--purple) 50%, var(--teal) 100%);
+            background-image: url("karo_luso.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             position: relative;
             overflow: hidden;
             text-align: center;
@@ -85,8 +88,8 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-            animation: patternMove 20s linear infinite;
+            /* Adjust the last value (0.4) to change transparency: 0 = fully transparent, 1 = fully opaque */
+            background: rgba(0, 0, 0, 0.4);
         }
 
         @keyframes patternMove {
@@ -526,9 +529,9 @@
                 <h2>Խնջույք</h2>
                 <p><strong>Գինաց ռեստորանային համալիր</strong></p>
                 <p>Գայի 3, Charentsavan 2501, Armenia</p>
-                <div class="event-time">🕐 17:30 - 🍽️ Ուտելու ենք 🍷 Խմելու ենք 🕺 Տժալու ենք</div>
+                <div class="event-time">🕐 17:30 - 🍽️ Ուտելու ենք... 🍷 Խմելու ենք... 🕺 Տժալու ենք...</div>
                 <a href="https://maps.app.goo.gl/sjZ1n2C9XTFVbbbf9" target="_blank" class="btn btn-teal">
-                    📍 Եթե ինչ նավիգատորով կգաս ստեղ
+                    📍 Եթե ինչ նավիգատորով արի
                 </a>
             </div>
         </div>
@@ -537,9 +540,9 @@
     <!-- Footer -->
     <footer>
         <div class="footer-emoji">💑</div>
-        <p><i>Սիրով սպասելու ենք կգաս անպայման</i></p>
+        <p><i>Ուրախ կլինենք, որ դառնաս մեր հատուկ օրվա մի մասը․․․</i></p>
         <p style="font-family: 'Caveat', cursive; font-size: 2rem; opacity: 1;">Karo & Lusine</p>
-        <p style="margin-top: 30px;">22.02.2026</p>
+        <p style="margin-top: 30px;">22.02.2026թ․</p>
     </footer>
 
     <script>
